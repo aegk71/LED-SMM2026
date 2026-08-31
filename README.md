@@ -1,33 +1,44 @@
 # LED-SMM2026 — Messe-Downloadseite
 
 Temporäre Download-Seite für die Messe. Eine einzelne `index.html` ohne Build-Schritt,
-ohne Framework, ohne externe Abhängigkeiten und ohne Tracking.
+ohne Framework, ohne externe Abhängigkeiten und ohne Tracking. Seitensprache: Englisch.
 
 **Live-URL:** https://aegk71.github.io/LED-SMM2026/
 
 ## Aufbau
 
 ```
-index.html          Die komplette Seite (HTML + CSS in einer Datei)
-assets/             Logo und Favicon
-files/              Alle Download-Dokumente (PDF, DWG, XLSM)
-files/media/        Fotos und Videos
+index.html            Die komplette Seite (HTML + CSS in einer Datei)
+assets/lethe-logo.jpg Logo für die Kopfleiste
+assets/hero-ship.jpg  Hintergrundbild der Begrüßung
+assets/favicon.svg    Browser-Tab-Symbol
+files/                Alle Download-Dokumente (PDF, DWG, XLSM)
+files/media/          Fotos und Videos
 ```
 
 ## Was noch ausgefüllt werden muss
 
-In `index.html` sind die anzupassenden Stellen mit `PLATZHALTER` kommentiert:
+In `index.html` sind die anzupassenden Stellen mit `PLACEHOLDER` kommentiert:
 
 | Stelle | Was |
 |---|---|
 | Kopfleiste | Messename / Standnummer im Badge (aktuell „SMM 2026") |
 | Begrüßung | Überschrift und Begrüßungstext |
-| Fußbereich | Impressum: Telefon, E-Mail, Geschäftsführung, HRB, USt-IdNr. |
 
-Suche in der Datei einfach nach `PLATZHALTER`.
+Suche in der Datei einfach nach `PLACEHOLDER`.
 
-> **Hinweis:** Das Impressum ist nach § 5 DDG für eine gewerbliche Seite Pflicht.
-> Die Pflichtangaben sollten vor dem Verteilen des QR-Codes vollständig sein.
+Das Impressum im Fußbereich ist mit den Angaben von lethe-bremen.de vollständig
+befüllt (Geschäftsführung, HRB 33947, USt-ID, Kontakt, OS-Plattform).
+
+## Hintergrundbild der Begrüßung
+
+`assets/hero-ship.jpg` ist die auf 1400 px verkleinerte und als JPEG gespeicherte
+`Schiff.png` (2055 KB → 194 KB). Darüber liegt ein Navy-Verlauf, damit der Text
+lesbar bleibt — die Regeln stehen in `.hero` und `.hero::before`.
+
+Anderes Motiv einsetzen: Datei nach `assets/hero-ship.jpg` legen, fertig. Ist das
+neue Bild heller, den Verlauf in `.hero::before` kräftiger stellen — die drei
+`rgba(...)`-Werte haben am Ende die Deckkraft (z. B. `.78` → `.88`).
 
 ## Neue Datei hinzufügen
 
@@ -61,8 +72,8 @@ git push
   <div class="body">
     <div>
       <p class="name">DATEINAME.pdf</p>
-      <p class="desc">Kurze Beschreibung, was drin steht.</p>
-      <p class="meta">PDF &middot; 12 Seiten &middot; 800 KB</p>
+      <p class="desc">Short description of the contents.</p>
+      <p class="meta">PDF &middot; 12 pages &middot; 800 KB</p>
     </div>
     <a class="dl" href="files/DATEINAME.pdf" download>
       <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -80,7 +91,7 @@ Für die farbigen Typ-Kacheln: `<span class="type">` (blau, PDF),
 Im Block `<ul class="grid">` ergänzen:
 
 ```html
-<li><a href="files/media/DATEINAME.jpg" target="_blank" rel="noopener"><img src="files/media/DATEINAME.jpg" alt="Kurze Bildbeschreibung" loading="lazy"></a></li>
+<li><a href="files/media/DATEINAME.jpg" target="_blank" rel="noopener"><img src="files/media/DATEINAME.jpg" alt="Short image description" loading="lazy"></a></li>
 ```
 
 ### Vorlage für ein neues Video

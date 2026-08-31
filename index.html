@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LED.11IGN.A60 – Downloads | Lethe Exterior Doors</title>
-<meta name="description" content="Download-Bereich zum A-60 Schiebetürsystem LED.11IGN.A60 von Lethe Exterior Doors GmbH.">
+<meta name="description" content="Download area for the A-60 sliding door system LED.11IGN.A60 by Lethe Exterior Doors GmbH.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
@@ -36,7 +36,7 @@ body{
 }
 .wrap{width:100%;max-width:760px;margin:0 auto;padding:0 20px}
 
-/* ---------- Kopfleiste ---------- */
+/* ---------- Top bar ---------- */
 .topbar{background:#fff;border-bottom:1px solid var(--line)}
 .topbar .wrap{
   display:flex;align-items:center;justify-content:space-between;
@@ -50,20 +50,36 @@ body{
   border-radius:999px;padding:5px 12px;white-space:nowrap;
 }
 
-/* ---------- Begrüßung ---------- */
-.hero{background:var(--navy);color:#fff;padding:38px 0 34px}
+/* ---------- Hero with ship background ---------- */
+.hero{
+  position:relative;
+  background:var(--navy) url("assets/hero-ship.jpg") center 45% / cover no-repeat;
+  color:#fff;
+  padding:52px 0 48px;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,
+    rgba(20,56,104,.78) 0%,
+    rgba(16,45,82,.88) 55%,
+    rgba(14,40,71,.96) 100%);
+}
+.hero .wrap{position:relative}
 .hero .kicker{
   font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:#9fb4d1;margin:0 0 10px;
+  color:#a8bcd6;margin:0 0 10px;
 }
 .hero h1{
   font-size:29px;line-height:1.2;font-weight:700;margin:0 0 14px;
-  letter-spacing:-.01em;
+  letter-spacing:-.01em;text-shadow:0 1px 3px rgba(0,0,0,.35);
 }
 .hero .rule{width:56px;height:3px;background:var(--magenta);border:0;margin:0 0 16px}
-.hero p{margin:0;font-size:16.5px;color:#d3dded;max-width:52ch}
+.hero p{margin:0;font-size:16.5px;color:#dbe4f0;max-width:52ch;text-shadow:0 1px 3px rgba(0,0,0,.3)}
 
-/* ---------- Abschnitte ---------- */
+/* ---------- Sections ---------- */
 section{padding:34px 0}
 section + section{padding-top:6px}
 h2{
@@ -72,7 +88,7 @@ h2{
 }
 .section-note{margin:0 0 18px;font-size:15px;color:var(--muted)}
 
-/* ---------- Download-Karten ---------- */
+/* ---------- Download cards ---------- */
 .list{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px}
 .item{
   background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -102,7 +118,7 @@ h2{
 .dl:active{background:var(--navy-dark)}
 .dl svg{flex:0 0 auto}
 
-/* ---------- Galerie ---------- */
+/* ---------- Gallery ---------- */
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 22px;padding:0;list-style:none}
 .grid a{display:block;border-radius:8px;overflow:hidden;background:#dfe4ea;line-height:0}
 .grid img{width:100%;height:130px;object-fit:cover;display:block}
@@ -115,17 +131,19 @@ h2{
 .videos video{width:100%;height:100%;object-fit:contain;display:block}
 .videos figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
 
-/* ---------- Fußbereich ---------- */
+/* ---------- Footer ---------- */
 footer{background:var(--navy-dark);color:#b9c6d8;padding:30px 0 38px;margin-top:26px;font-size:14.5px}
 footer h3{
   font-size:12px;letter-spacing:.11em;text-transform:uppercase;
   color:#7f95b3;margin:0 0 10px;font-weight:700;
 }
+footer h3 + h3{margin-top:0}
 footer p{margin:0 0 18px;line-height:1.6}
 footer a{color:#fff}
 footer .fine{font-size:13px;color:#7f95b3;margin:0}
 
 @media (min-width:620px){
+  .hero{padding:64px 0 58px}
   .hero h1{font-size:36px}
   .item{align-items:center}
   .body{display:flex;align-items:center;justify-content:space-between;gap:18px}
@@ -138,34 +156,34 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
 </head>
 <body>
 
-<!-- ================= KOPFLEISTE ================= -->
+<!-- ================= TOP BAR ================= -->
 <header class="topbar">
   <div class="wrap">
     <img class="logo" src="assets/lethe-logo.jpg" alt="Lethe Exterior Doors GmbH">
-    <!-- PLATZHALTER: Messename / Standnummer -->
+    <!-- PLACEHOLDER: trade fair name / stand number -->
     <span class="badge">SMM 2026</span>
   </div>
 </header>
 
-<!-- ================= BEGRÜSSUNG ================= -->
+<!-- ================= WELCOME ================= -->
 <div class="hero">
   <div class="wrap">
-    <!-- PLATZHALTER: Überschrift und Begrüßungstext -->
-    <p class="kicker">Unterlagen zum Download</p>
-    <h1>LED.11IGN.A60 &ndash; A-60 Schiebetürsystem</h1>
+    <!-- PLACEHOLDER: headline and welcome text -->
+    <p class="kicker">Documents for download</p>
+    <h1>LED.11IGN.A60 &ndash; A-60 Sliding Door System</h1>
     <hr class="rule">
-    <p>Vielen Dank für Ihren Besuch an unserem Stand. Hier finden Sie alle
-       Unterlagen zur einflügeligen A-60 Brandschutz-Schiebetür und zum
-       zugehörigen Antriebs- und Steuerungssystem LED.STS.A60.</p>
+    <p>Thank you for visiting our stand. Here you will find all documents for the
+       single-leaf A-60 sliding fire door and its matching drive and control
+       system LED.STS.A60.</p>
   </div>
 </div>
 
-<!-- ================= ZULASSUNGEN ================= -->
+<!-- ================= APPROVALS ================= -->
 <section>
   <div class="wrap">
-    <h2>Zulassungen</h2>
-    <p class="section-note">EG-Baumusterprüfbescheinigungen (Modul B) nach Marine
-       Equipment Directive 2014/90/EU, ausgestellt durch TÜV NORD Systems GmbH &amp; Co. KG (NB 0045).</p>
+    <h2>Approvals</h2>
+    <p class="section-note">EC type-examination certificates (Module B) under the Marine
+       Equipment Directive 2014/90/EU, issued by TÜV NORD Systems GmbH &amp; Co. KG (NB 0045).</p>
 
     <ul class="list">
       <li class="item">
@@ -173,8 +191,8 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">M26016-B-V01 &ndash; LED.11IGN.A60</p>
-            <p class="desc">EG-Baumusterprüfbescheinigung für die einflügelige A-60 Brandschutz-Schiebetür.</p>
-            <p class="meta">PDF &middot; 3 Seiten &middot; 261 KB &middot; gültig bis 12.04.2031</p>
+            <p class="desc">EC type-examination certificate for the single-leaf A-60 sliding fire door.</p>
+            <p class="meta">PDF &middot; 3 pages &middot; 261 KB &middot; valid until 12 Apr 2031</p>
           </div>
           <a class="dl" href="files/M26016-B-V01-LED.11IGN.A60.pdf" download>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -188,8 +206,8 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">M26017-B-V01 &ndash; LED.STS.A60</p>
-            <p class="desc">EG-Baumusterprüfbescheinigung für das Steuerungssystem der Schiebetür.</p>
-            <p class="meta">PDF &middot; 3 Seiten &middot; 258 KB &middot; gültig bis 12.04.2031</p>
+            <p class="desc">EC type-examination certificate for the door&rsquo;s control system.</p>
+            <p class="meta">PDF &middot; 3 pages &middot; 258 KB &middot; valid until 12 Apr 2031</p>
           </div>
           <a class="dl" href="files/M26017-B-V01-LED.STS.A60.pdf" download>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -201,11 +219,11 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
   </div>
 </section>
 
-<!-- ================= TECHNISCHE UNTERLAGEN ================= -->
+<!-- ================= TECHNICAL DOCUMENTS ================= -->
 <section>
   <div class="wrap">
-    <h2>Technische Unterlagen</h2>
-    <p class="section-note">Zeichnungen, Auslegungsmatrix und Anschlussplan.</p>
+    <h2>Technical documents</h2>
+    <p class="section-note">Drawings, configuration matrix and wiring plan.</p>
 
     <ul class="list">
       <li class="item">
@@ -213,8 +231,8 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">LED.11IGN.A60.CuDrwg.V0.pdf</p>
-            <p class="desc">Brandtestzeichnung der A-60 Innenschiebetür, Blattformat A0.</p>
-            <p class="meta">PDF &middot; 2 Seiten &middot; 324 KB</p>
+            <p class="desc">Fire test drawing of the A-60 internal sliding door, sheet size A0.</p>
+            <p class="meta">PDF &middot; 2 pages &middot; 324 KB</p>
           </div>
           <a class="dl" href="files/LED.11IGN.A60.CuDrwg.V0.pdf" download>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -228,7 +246,7 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">LED.11IGN.A60.CuDrwg.V0.dwg</p>
-            <p class="desc">Dieselbe Zeichnung als CAD-Datei zur Weiterverarbeitung.</p>
+            <p class="desc">The same drawing as a CAD file for further processing.</p>
             <p class="meta">DWG &middot; 495 KB</p>
           </div>
           <a class="dl" href="files/LED.11IGN.A60.CuDrwg.V0.dwg" download>
@@ -243,7 +261,7 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">LED.11IGN.A60.MTX.03.xlsm</p>
-            <p class="desc">Auslegungsmatrix V03. Excel-Datei mit Makros &ndash; beim Öffnen Inhalt aktivieren.</p>
+            <p class="desc">Configuration matrix V03. Excel file with macros &ndash; enable content when opening.</p>
             <p class="meta">XLSM &middot; 264 KB</p>
           </div>
           <a class="dl" href="files/LED.11IGN.A60.MTX.03.xlsm" download>
@@ -258,8 +276,8 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">LED.STS.A60.ConPlan.00.pdf</p>
-            <p class="desc">Anschluss- und Verdrahtungsplan für Steuerung, Antrieb und Sensorik.</p>
-            <p class="meta">PDF &middot; 1 Seite &middot; 696 KB</p>
+            <p class="desc">Connection and wiring plan for control unit, drive and sensors.</p>
+            <p class="meta">PDF &middot; 1 page &middot; 696 KB</p>
           </div>
           <a class="dl" href="files/LED.STS.A60.ConPlan.00.pdf" download>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -271,11 +289,11 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
   </div>
 </section>
 
-<!-- ================= BEDIENUNG ================= -->
+<!-- ================= OPERATION ================= -->
 <section>
   <div class="wrap">
-    <h2>Bedienung</h2>
-    <p class="section-note">Handbuch zum Heise Slide Track System.</p>
+    <h2>Operation</h2>
+    <p class="section-note">Manual for the Heise Slide Track System.</p>
 
     <ul class="list">
       <li class="item">
@@ -283,8 +301,8 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
         <div class="body">
           <div>
             <p class="name">LED.STS.A60.UseMan.06.pdf</p>
-            <p class="desc">User Manual V6 (2023), englisch. Heise Slide Track System Typ LED.STS.A60.</p>
-            <p class="meta">PDF &middot; 44 Seiten &middot; 5,7 MB</p>
+            <p class="desc">User Manual V6 (2023). Heise Slide Track System type LED.STS.A60.</p>
+            <p class="meta">PDF &middot; 44 pages &middot; 5.7 MB</p>
           </div>
           <a class="dl" href="files/LED.STS.A60.UseMan.06.pdf" download>
             <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.5v9"/><path d="M4.5 7.5 8 11l3.5-3.5"/><path d="M2 13.5h12"/></svg>
@@ -296,60 +314,70 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
   </div>
 </section>
 
-<!-- ================= GALERIE ================= -->
+<!-- ================= GALLERY ================= -->
 <section>
   <div class="wrap">
-    <h2>Fotos &amp; Videos</h2>
-    <p class="section-note">Aufnahmen des Prüfaufbaus. Auf ein Foto tippen, um es in voller Auflösung zu öffnen.</p>
+    <h2>Photos &amp; videos</h2>
+    <p class="section-note">Images of the test assembly. Tap a photo to open it at full resolution.</p>
 
     <ul class="grid">
-      <li><a href="files/media/LED.11IGN.A60-Foto-01.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-01.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 1" loading="lazy"></a></li>
-      <li><a href="files/media/LED.11IGN.A60-Foto-02.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-02.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 2" loading="lazy"></a></li>
-      <li><a href="files/media/LED.11IGN.A60-Foto-03.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-03.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 3" loading="lazy"></a></li>
-      <li><a href="files/media/LED.11IGN.A60-Foto-04.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-04.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 4" loading="lazy"></a></li>
-      <li><a href="files/media/LED.11IGN.A60-Foto-05.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-05.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 5" loading="lazy"></a></li>
-      <li><a href="files/media/LED.11IGN.A60-Foto-06.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-06.jpg" alt="LED.11IGN.A60 Prüfaufbau, Ansicht 6" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-01.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-01.jpg" alt="LED.11IGN.A60 test assembly, view 1" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-02.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-02.jpg" alt="LED.11IGN.A60 test assembly, view 2" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-03.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-03.jpg" alt="LED.11IGN.A60 test assembly, view 3" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-04.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-04.jpg" alt="LED.11IGN.A60 test assembly, view 4" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-05.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-05.jpg" alt="LED.11IGN.A60 test assembly, view 5" loading="lazy"></a></li>
+      <li><a href="files/media/LED.11IGN.A60-Foto-06.jpg" target="_blank" rel="noopener"><img src="files/media/LED.11IGN.A60-Foto-06.jpg" alt="LED.11IGN.A60 test assembly, view 6" loading="lazy"></a></li>
     </ul>
 
     <ul class="videos">
       <li><figure>
         <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-01.mp4"></video></div>
-        <figcaption>Video 1 &middot; 2,0 MB</figcaption>
+        <figcaption>Video 1 &middot; 2.0 MB</figcaption>
       </figure></li>
       <li><figure>
         <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-02.mp4"></video></div>
-        <figcaption>Video 2 &middot; 3,7 MB</figcaption>
+        <figcaption>Video 2 &middot; 3.7 MB</figcaption>
       </figure></li>
       <li><figure>
         <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-03.mp4"></video></div>
-        <figcaption>Video 3 &middot; 1,7 MB</figcaption>
+        <figcaption>Video 3 &middot; 1.7 MB</figcaption>
       </figure></li>
     </ul>
   </div>
 </section>
 
-<!-- ================= FUSSBEREICH ================= -->
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
-    <!-- PLATZHALTER: Impressum vervollständigen (Telefon, E-Mail, Geschäftsführung, HRB, USt-IdNr.) -->
-    <h3>Impressum</h3>
+    <h3>Imprint</h3>
     <p>
       Lethe Exterior Doors GmbH<br>
       Marschgehren 14<br>
-      28779 Bremen, Deutschland<br>
-      Telefon: &mdash;<br>
-      E-Mail: &mdash;<br>
-      Geschäftsführung: &mdash;<br>
-      Registergericht / HRB: &mdash;<br>
-      USt-IdNr.: &mdash;
+      28779 Bremen, Germany<br>
+      Phone: <a href="tel:+494216990690">+49 421 6990690</a><br>
+      Email: <a href="mailto:info@lethe-bremen.de">info@lethe-bremen.de</a><br>
+      Web: <a href="https://www.lethe-bremen.de" target="_blank" rel="noopener">www.lethe-bremen.de</a>
+    </p>
+    <p>
+      Managing Directors: Dipl.-Ing. Axel Kruse, Dipl.-Ing. Hauke Schoof (M.A.)<br>
+      Branch Manager: Axel Kruse<br>
+      Responsible for content pursuant to § 55 (2) RStV: Axel Kruse<br>
+      Commercial register: HRB 33947, Amtsgericht Bremen<br>
+      VAT ID: DE252434575
     </p>
 
-    <h3>Datenschutz</h3>
-    <p>Diese Seite setzt keine Cookies, bindet keine externen Dienste ein und verwendet
-       kein Tracking. Beim Abruf verarbeitet der Hoster GitHub Pages technisch notwendige
-       Verbindungsdaten einschließlich der IP-Adresse.</p>
+    <h3>Dispute resolution</h3>
+    <p>The European Commission provides a platform for online dispute resolution at
+       <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.
+       We are neither obliged nor willing to take part in dispute resolution proceedings
+       before a consumer arbitration board.</p>
 
-    <p class="fine">Temporäre Download-Seite zur Messe. Alle Unterlagen bleiben Eigentum der Lethe Exterior Doors GmbH.</p>
+    <h3>Privacy</h3>
+    <p>This page sets no cookies, embeds no third-party services and uses no tracking.
+       When the page is accessed, the host GitHub Pages processes technically necessary
+       connection data including the IP address.</p>
+
+    <p class="fine">Temporary download page for the trade fair. All documents remain the property of Lethe Exterior Doors GmbH.</p>
   </div>
 </footer>
 
