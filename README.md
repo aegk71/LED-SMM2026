@@ -146,9 +146,29 @@ Das ist endgültig. Vorher sicherstellen, dass die Originaldateien noch lokal li
 
 ## QR-Code
 
+Fertiges Bild im Handy-Hochformat: **`assets/qr-poster.png`** (1080 × 1920).
+Erzeugt von `tools/make-qr-poster.py`.
+
 Der QR-Code zeigt auf https://aegk71.github.io/LED-SMM2026/ — die URL ändert sich nicht,
 solange Repo-Name und Konto gleich bleiben. Inhalte lassen sich also beliebig nachpflegen,
-ohne den gedruckten QR-Code zu entwerten.
+ohne einen gedruckten QR-Code zu entwerten.
+
+Neu erzeugen (z. B. nach Textänderung oder für eine andere Messe):
+
+```bash
+pip install qrcode pillow
+python tools/make-qr-poster.py
+```
+
+Fehlerkorrektur steht auf Stufe Q (25 %), die Ruhezone auf die genormten 4 Module.
+Die Modulgröße wird auf einen ganzzahligen Pixelwert gerundet — ein nachträgliches
+Skalieren des fertigen Bildes würde ungleich breite Module erzeugen und den Code
+bei schlechtem Licht unzuverlässig machen. Aus demselben Grund liegt der Code auf
+weißer Fläche und nicht auf dem Schiffsbild.
+
+Für großformatigen Druck (Aufsteller, Roll-up) in `tools/make-qr-poster.py` oben
+`W, H` hochsetzen — die Maße sind relativ dazu nicht automatisch, die Y-Werte im
+Skript müssten dann mitwachsen. Sag Bescheid, wenn du eine Druckvariante brauchst.
 
 ## Hinweis zur Sichtbarkeit
 
