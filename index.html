@@ -108,7 +108,11 @@ h2{
 .grid img{width:100%;height:130px;object-fit:cover;display:block}
 .videos{display:grid;gap:16px;margin:0;padding:0;list-style:none}
 .videos figure{margin:0}
-.videos video{width:100%;max-height:58vh;object-fit:contain;border-radius:8px;background:#000;display:block}
+.videos .frame{
+  height:320px;background:#000;border-radius:8px;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.videos video{width:100%;height:100%;object-fit:contain;display:block}
 .videos figcaption{font-size:13.5px;color:var(--muted);margin-top:6px}
 
 /* ---------- Fußbereich ---------- */
@@ -126,6 +130,7 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
   .item{align-items:center}
   .body{display:flex;align-items:center;justify-content:space-between;gap:18px}
   .dl{margin-top:0;width:auto;flex:0 0 auto}
+  .videos .frame{height:400px}
   .grid{grid-template-columns:repeat(3,1fr)}
   .grid img{height:150px}
 }
@@ -308,15 +313,15 @@ footer .fine{font-size:13px;color:#7f95b3;margin:0}
 
     <ul class="videos">
       <li><figure>
-        <video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-01.mp4"></video>
+        <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-01.mp4"></video></div>
         <figcaption>Video 1 &middot; 2,0 MB</figcaption>
       </figure></li>
       <li><figure>
-        <video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-02.mp4"></video>
+        <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-02.mp4"></video></div>
         <figcaption>Video 2 &middot; 3,7 MB</figcaption>
       </figure></li>
       <li><figure>
-        <video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-03.mp4"></video>
+        <div class="frame"><video controls preload="metadata" playsinline src="files/media/LED.11IGN.A60-Video-03.mp4"></video></div>
         <figcaption>Video 3 &middot; 1,7 MB</figcaption>
       </figure></li>
     </ul>
