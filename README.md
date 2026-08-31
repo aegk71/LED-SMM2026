@@ -75,6 +75,26 @@ git push
 Für die farbigen Typ-Kacheln: `<span class="type">` (blau, PDF),
 `<span class="type dwg">` (magenta, CAD), `<span class="type xlsm">` (grün, Excel).
 
+### Vorlage für ein neues Foto
+
+Im Block `<ul class="grid">` ergänzen:
+
+```html
+<li><a href="files/media/DATEINAME.jpg" target="_blank" rel="noopener"><img src="files/media/DATEINAME.jpg" alt="Kurze Bildbeschreibung" loading="lazy"></a></li>
+```
+
+### Vorlage für ein neues Video
+
+Im Block `<ul class="videos">` ergänzen. Der `<div class="frame">` ist wichtig —
+er begrenzt die Höhe, sonst füllt ein Hochformat-Clip den ganzen Handybildschirm:
+
+```html
+<li><figure>
+  <div class="frame"><video controls preload="metadata" playsinline src="files/media/DATEINAME.mp4"></video></div>
+  <figcaption>Video 4 &middot; 2,5 MB</figcaption>
+</figure></li>
+```
+
 ### Dateinamen
 
 Keine Leerzeichen, keine Klammern und keine Umlaute — die stehen später in der URL.
